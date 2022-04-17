@@ -5,8 +5,8 @@ const gameText =  document.querySelector(".game-text");
 const scoreDisplay =  document.querySelector(".score");
 const restartButton = document.querySelector(".game-text > button");
 // Setting
-const GAME_ROWS =20;
-const GAME_COLS =10;
+const GAME_ROWS =25;
+const GAME_COLS =15;
 
 //variables
 let score = 0;
@@ -289,7 +289,7 @@ function generateNewBlock() {
 
     movingItem.type = blockArray[randomIndex][0];
     movingItem.top =0;
-    movingItem.left =3;
+    movingItem.left =6;
     movingItem.direction =0;
     tempMovingItem = {...movingItem};
     renderBlocks();
